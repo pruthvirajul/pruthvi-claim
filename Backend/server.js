@@ -2,7 +2,7 @@ const express = require('express');
 const { Pool } = require('pg');
 const cors = require('cors');
 const app = express();
-const port = 3000;
+const port = 3203;
 
 // PostgreSQL database connection configuration
 const pool = new Pool({
@@ -164,5 +164,5 @@ app.delete('/api/claims', async (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server running at http://56.228.21.217:${port}`);
+    console.log(`Server running at http://13.60.162.192:${port}`);
 });

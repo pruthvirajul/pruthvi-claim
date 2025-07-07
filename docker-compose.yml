@@ -19,7 +19,7 @@ services:
     build: ./Backend
     container_name: claim_backend
     ports:
-      - "3005:3005"
+      - "3203:3203"
     depends_on:
       - postgres
 
@@ -27,7 +27,7 @@ services:
     build: ./Employee-claims
     container_name: employee_claims_ui
     ports:
-      - "7565:80"
+      - "8007:80"
     depends_on:
       - backend
 
@@ -35,7 +35,7 @@ services:
     build: ./HR-claims
     container_name: hr_claims_ui
     ports:
-      - "7566:80"
+      - "8008:80"
     depends_on:
       - backend
 
