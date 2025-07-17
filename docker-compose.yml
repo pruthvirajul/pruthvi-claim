@@ -27,7 +27,7 @@ services:
     build: ./Employee-claims
     container_name: employee_claims_ui
     ports:
-      - "8021:80"
+      - "8191:80"
     depends_on:
       - backend
 
@@ -35,7 +35,7 @@ services:
     build: ./HR-claims
     container_name: hr_claims_ui
     ports:
-      - "8022:80"
+      - "8192:80"
     depends_on:
       - backend
 
